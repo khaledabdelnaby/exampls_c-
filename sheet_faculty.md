@@ -1,0 +1,230 @@
+### sheet section 1
+
+- 1
+
+Write a program to Solve the following formula: 𝑦−𝑐𝑑+𝑣 where y=10, d=20, Enter the c and v values during the program execution.
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+    
+    int y = 10, c , d =20 , v ; 
+    cout << "enter two value : ";
+    cin >>c>>v;
+    int result; 
+    result = y + c*d + v;
+    cout<<y<< " + "<<c << " * " << d <<" + "<< v <<"=  "<< result;
+    
+    
+
+    return 0;
+}
+```
+
+- 2 
+
+Write a program in C++ to calculate the volume of a cube. Input the side of a cube: 5 Volume=𝑠𝑖𝑑𝑒3
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+    
+    int side ; 
+    cout << "enter value : ";
+    cin >>side;
+     int volume = side * side * side ;
+    cout << "volume = "<< volume;
+    
+    
+
+    return 0;
+}
+```
+
+- 3
+
+  Write a program in C++ to calculate the volume of a sphere with different radius= 6? ----------------- Sample Output: Input the radius of a sphere: 6 The volume of a sphere is: 904.32 Note: volume of sphere is: V = ⁴⁄₃π r³ where: r=radius, π=3.14
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+    
+    // radius = r 
+    int r = 6; 
+    float pi = 3.14; 
+    float V = (4*pi * r * r * r)/3;
+    cout << " the value = "<< V;
+    
+
+    return 0;
+}
+```
+
+- 4
+
+Write a program in C++ to find power )^2 (any number ? 
+
+Note: The user will input the base and exponent numbers.
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+    float num , powr , result = 1; 
+    cout << " enter the base number : ";
+	cin >>num;
+    cout <<endl << " enter the pow number : " ;
+	cin >>powr;
+	for (int i=1 ; i<= powr ; i ++){
+	  result*=num;   
+	}
+    cout <<endl<<  " the number after calc bowr= "<< result;
+    return 0;
+}
+```
+
+- 5
+
+Write a program in C++ to calculate the volume of a cylinder. Go to the editor Sample Output: Calculate the volume of a cylinder: ----------------------------------------- Input the radius of the cylinder: 4 Input the height of the cylinder: 8 The volume of a cylinder is: 401.92 
+
+Pictorial Presentation:
+
+![image-20231216175528240](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20231216175528240.png)
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+  float pi = 3.14 , r=4 , h= 8 ; 
+    float volume = pi * r *r * h ;
+    float area =( 2* pi * r *r ) + (2* pi * r * h ) ;
+    cout << " the volume = "<< volume << endl ;
+    cout << " the area = "<< area ;
+    
+    
+    
+    return 0;
+}
+```
+
+- 6
+
+Write a program in C++ to find Size of fundamental data types.
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+ 
+   cout << " size of int = "<< sizeof(int)<< " bit"<<endl;
+   cout << " size of float = "<< sizeof(float)<< " bit"<<endl;
+   cout << " size of double = "<< sizeof(double)<< " bit"<<endl;
+   cout << " size of bool = "<< sizeof(bool)<< " bit"<<endl;
+   cout << " size of long int = "<< sizeof(long int)<< " bit"<<endl;
+   cout << " size of short int = "<< sizeof(short int)<< " bit"<<endl;
+   
+    return 0;
+}
+```
+
+- 7
+
+Write a program in C++ to swap two numbers?
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+ int x, y ;
+    cout << " enter x and y : ";
+    cin >>x>>y;
+    cout << "before swab " <<endl ;
+    cout << " x = "<<x <<endl<< " y = "<<y << endl;
+
+    int z ; 
+    z = x;
+    x=y;
+    y=z;
+    cout <<" after swab " <<endl; 
+    cout << " x = "<<x <<endl<< " y = "<<y << endl;
+    return 0;
+}
+```
+
+- 8
+
+Write a program in C++ to convert temperature in Celsius to Fahrenheit.
+Sample Output: Convert temperature in Celsius to Fahrenheit: --------------------------------------------------- Input the temperature in Celsius: 35
+
+ The temperature in Celsius : 35 The temperature in Fahrenheit : 95
+
+![image-20231216181928138](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20231216181928138.png)
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+    float C ;
+    cout << " enter the tempratior by celisus : ";
+    cin >>C ;
+    float F = (9*C + (32 * 5 ))/5;
+    cout << "the tembrationr by Fehr = "<<F<<endl;
+    
+    
+    return 0;
+}
+
+```
+
+- 9 
+
+Write a program in C++ that converts kilometers per hour to miles per hour.
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+    float kel ; 
+    cout << " enter kilometers per hour : ";
+    cin >>kel;
+    cout << " miles per hour= "<<kel* 0.6213712 << endl;
+    
+    return 0;
+}
+
+```
+
+- 10
+
+Write a program in C++ to print the code (ASCII code / Unicode code etc.) of a given character.
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+    char x ; 
+    cout << " enter the char : ";
+    cin>>x;
+    cout << "the char = "<<int( x)<<" Dec";
+    
+    return 0;
+}
+```
+
+### sheet section 2
+
+- 1
+
