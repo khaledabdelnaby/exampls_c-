@@ -228,3 +228,163 @@ int main() {
 
 - 1
 
+Write a program in C++ to display the operation of pre- and post-increment and decrement?
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x=1;
+    int y=1;
+    
+ cout << "x++ = "<< x++ << endl;
+ cout << "++x = " << ++x << endl;
+ cout << "y-- = "<< y-- << endl;
+ cout << "--y = "<< --y << endl;
+     
+    return 0;
+}
+```
+
+- 2
+
+Write a program in C++ to find the third angle of a triangle?
+
+![image-20231216225151988](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20231216225151988.png)
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a , b=70 , c=50;
+    //a + b + c = 180
+    a = 180 - ( b + c );
+    cout << "angle a = "<<a;
+    
+    
+    return 0;
+}
+```
+
+- 3
+
+Create a Calculator using the if Statement? 
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+ 
+    int num1 , num2;
+    char operatore ;
+    cout << " enter the first number : ";
+    cin>>num1;
+    cout << "enter the operator : ";
+    cin >>operatore;
+    cout << " enter the sacnd number : ";
+    cin>>num2;
+    if (operatore == '+'){
+	cout <<num1 << " + "<< num2 << " = "<< num1 + num2 <<endl;
+    }
+    else if (operatore == '-'){
+	cout <<num1 << " - "<< num2 << " = "<< num1 - num2 <<endl;
+    }
+     else if (operatore == '*'){
+	cout <<num1 << " * "<< num2 << " = "<< num1 * num2 <<endl;
+    }
+     else if (operatore == '/'){
+	cout <<num1 << " / "<< num2 << " = "<< num1 / num2 <<endl;
+    }
+     else if (operatore == '%'){
+	cout <<num1 << " % "<< num2 << " = "<< num1 % num2 <<endl;
+    }
+    return 0;
+}
+```
+
+- 4
+
+write a C++ program to find if an integer is even or odd or neither (0)?
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+ 
+    int x ; 
+    cout << "enter number for chanig even or odd : ";
+    cin >>x;
+    if (x%2==0 and x!=0 ){
+        cout <<" the number is 'even' ";
+    }
+    else if (x%2!=0 and x!=0 ){
+        cout <<" the number is 'odd' ";
+    }
+    else
+     	cout <<" the number is ( 0 ) ";
+
+    return 0;
+}
+```
+
+- 5
+
+write a c++ program to check some personal data for a job applicant,the program asks him some questions then decide if he acceptable or not acceptable
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+ 	cout << " aplication for ablye job "<< endl ;
+    cout <<"_____________________________________"<< endl;
+    int ayer , graduated , experiencs ;
+    char empaloyed , graduate ;
+    cout << "how old are you ? "<< endl;
+    cin>>ayer;
+    cout<<"when you graduated ?"<<endl;
+    cin>>graduated;
+    cout << "are you employed_before :Y/N?"<< endl;
+    cin >>empaloyed;
+    cout << "how many experience years ?"<<endl;
+    cin>> experiencs;
+    cout <<"what is your graduate grade e=excellent , v=very good , g=good ? "<<endl;
+    cin>>graduate;
+    
+    if((ayer >= 25 and ayer <= 40) and graduated >= 2010 and empaloyed == 'Y' and experiencs >= 3 and (graduate == 'e' or graduate == 'v' )){
+
+        cout <<" you accept ";
+    }
+    else 
+        cout <<" you dont accept ";
+        
+    
+    return 0;
+}
+```
+
+- 7
+
+write a C++ Program to Find the Length of a String?
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+ 	 string name ; 
+     cout << " enter your name : ";
+     cin>>name;
+    cout << " lingth your name =" << size(name);
+    return 0;
+}
+```
+
+### sheet section 3
+
+- 1
+
