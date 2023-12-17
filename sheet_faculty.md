@@ -388,3 +388,71 @@ int main() {
 
 - 1
 
+Write a program in C++ that takes a number as input and prints its multiplication table up to 10.
+
+```C++
+
+#include <iostream>
+using namespace std;
+int main() {
+ 	
+    int num ;
+    cout << "enter number : ";
+    cin >>num;
+    for (int i=1 ; i <=10 ; i++){
+        cout << i << " * " <<num <<" = "<<num * i<<endl;
+    }
+    return 0;
+}
+```
+
+- 2
+
+Write a C++ program to add all the numbers from 1 to a given number
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+ 	
+   int x ;
+    cout << " enter number : ";
+    cin >>x;
+    int sum = 0;
+    for(int i=1 ; i<=x ; i++ ){
+	sum+=i;
+    }
+    cout << "the sume = "<< sum <<endl;
+    return 0;
+}
+```
+
+- 3
+
+Write a program in C++ to check whether a number is prime or not
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+ 	
+   int x ;
+    cout << " enter number : ";
+    cin >>x;
+ 	 int prim=0;
+    for (int i=1 ; i<=x ; i++ ){
+        if (x % i ==0 ){
+		prim++;
+        }
+    }
+    if (prim==2){
+        cout << " the number is prime ";   
+    }
+    else
+       cout << " the number is not prime ";
+    return 0;
+}
+```
+
