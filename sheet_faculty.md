@@ -456,3 +456,185 @@ int main() {
 }
 ```
 
+- 4
+
+Write a program in C++ to find the sum of the series 1 + 1/2^2 + 1/3^3 + …. + 1/n^n.
+
+```c++
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+ 	int num ;
+    double sum = 0;
+    cout << "enter number : ";
+    cin >>num;
+    for (int i=1 ; i<=num ; i++){
+         sum+= (1/pow(i,i));
+    }
+ cout << "the sumiation = "<<sum;
+    return 0;
+}
+```
+
+- 5
+
+Write a program in C++ to calculate the series (1) + (1+2) + (1+2+3) + (1+2+3+4) + ... + (1+2+3+4+...+n).
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+ 	int num ;
+    double sum = 0;
+    cout << "enter number : ";
+    cin >>num;
+    for (int i=1 ; i<=num ; i++){
+ 		for(int j=1 ; j<=i ; j++){
+            sum+=j;
+        }
+    }
+ cout << "the sumiation = "<<sum;
+    return 0;
+}
+```
+
+- 6
+
+Write a program in C++ to print a square pattern with # character.
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+    for (int i=1 ; i<=4 ; i++){
+ 		for(int j=1 ; j<=4 ; j++){
+ 			cout << "#  ";
+        }
+    	cout << endl;
+    }
+    return 0;
+}
+```
+
+- 7
+
+Write a program in C++ to display the n terms of harmonic series and their sum.1 + 1/2 + 1/3 + 1/4 + 1/5 ... 1/n terms?
+
+```c++
+
+#include <iostream>
+using namespace std;
+int main() {
+    int num ;
+    double sum=0.0;
+    cout << "enter number : ";
+	cin >>num;
+        for (int i=1 ; i<=num ; i++){
+            cout << "(1 / "<<i <<" ) ";
+            sum+=(1.0/i);
+            if (i<num){
+                cout << "+ ";
+            }
+    }
+	cout << " = "<<sum;    
+    return 0;
+}
+```
+
+- 8
+
+Write a program in C++ to find the number and sum of all integer between 100 and 200 which are divisible by 9?
+
+```c++
+#include <iostream>
+using namespace std;
+int main() {
+ 	int sum =0 ;
+    for (int i=100 ; i<=200 ; i++){
+        if (i%9==0){
+			sum+=i;
+			cout << i ;
+			if (i<200)
+			    cout << " + ";
+        }
+    }
+    cout <<" = " <<sum;
+    return 0;
+}
+```
+
+- 9
+
+Write a program in C++ to make such a pattern like right angle triangle using number which will repeat the number for that row?
+
+```c++
+#include <iostream>
+using namespace std;
+int main() {
+    int num ;
+    cout << "input numcer : ";
+	cin >>num;
+    for (int i=1 ; i<=num ; i++){
+        for (int j=1 ; j<=i ; j++){
+            cout <<i;
+        }
+        cout <<endl;
+    }
+    return 0;
+}
+```
+
+- 10
+
+Write a program in C++ to find power of any number using for loop.?
+
+```c++
+#include <iostream>
+using namespace std;
+int main() {
+    int num ;
+    cout << "input numcer : ";
+	cin >>num;
+    for (int i=1 ; i<=1 ; i++){
+ 		cout << " the power = "<< num *num;
+    }
+    return 0;
+}
+```
+
+- 11
+
+Write a program in C++ to enter any number and print all factors of the number?
+
+```c++
+#include <iostream>
+using namespace std;
+int main() {
+   
+    for (int i=1 ; i<=12 ; i++){
+        for(int j=1 ; j<=i ; j++){
+			if (i*j==12){
+                cout << i <<" * "<<j <<" = "<<i*j <<endl;
+                
+            }            
+        }
+    }
+   
+//   _______________________________________________
+    for (int i=1 ; i<=12 ; i++){
+        for(int j=1 ; j<=i ; j++){
+			if (i*j==12){
+			   
+                cout << i <<" , "<<j << " , ";
+                        
+            }       
+        }
+    }
+    return 0;
+}
+```
+
