@@ -488,11 +488,20 @@ Write a program in C++ to calculate the series (1) + (1+2) + (1+2+3) + (1+2+3+4)
 using namespace std;
 int main() {
  	int num ;
-    double sum = 0;
+    int sum = 0 , reslt=0;
     cout << "enter number : ";
     cin >>num;
     for (int i=1 ; i<=num ; i++){
+        reslt=0;
  		for(int j=1 ; j<=i ; j++){
+ 		    reslt+=j;
+ 		    cout<<j;
+ 		    if(j==i){
+ 		        cout <<" = "<<reslt<<endl;
+ 		    }
+ 		    else {
+ 		        cout<<" + ";
+ 		    }
             sum+=j;
         }
     }
@@ -634,6 +643,186 @@ int main() {
             }       
         }
     }
+    return 0;
+}
+```
+
+### sheet section 4
+
+- 1
+
+Write a program that calculates 6^5. Declare your own function to do this?
+
+```c++
+#include <iostream>
+#include <cmath>
+using namespace std;
+void powr(void){
+    int base , powe;
+    cout<< "enter two number : ";
+    cin >>base>>powe;
+    cout<<"\n "<<base<<" ^ "<<powe<<" = "<<pow(base,powe);
+}
+int main() {
+   powr();
+ 	
+    return 0;
+}
+```
+
+- 2
+
+Write a program that asks a name say hello. Use your own function that receives a string of characters (name) and prints on screen the hello message. (Doesn't returns anything- void type)
+
+```c++
+#include <iostream>
+using namespace std;
+void nam(void){
+    string nam;
+    cout<< "enter your name : ";
+    cin >>nam;
+    cout<<"hello "<<nam;
+}
+int main() {
+   nam();
+ 	
+    return 0;
+}
+```
+
+- 3
+
+-Write a program that ask for two numbers, compare them and show the maximum. Declare a function called max_two that compares the numbers and returns the maximum?
+
+```c++
+#include <iostream>
+using namespace std;
+int nam(void){
+ int x , y;
+    cout<<" enter two number : ";
+    cin >>x>>y;
+    if(x > y)
+        return x;
+    else 
+         return y;
+}
+int main() {
+  int max= nam();
+ 	cout <<endl<<"max = "<<max;
+    return 0;
+}
+```
+
+- 4 
+
+Write a program that asks the user for an integer number and find the sum of all natural numbers up to that number?
+
+```c++
+#include <iostream>
+using namespace std;
+int sum(void){
+ int x ;
+    cout<<" enter number : ";
+    cin >>x;
+    int sum=0;
+    for(int i=1 ; i<=x ; i++){
+        sum+=i;
+    }
+    return sum;
+}
+int main() {
+  int sumation= sum();
+ 	cout <<endl<<"sumation = "<<sumation;
+    return 0;
+}
+```
+
+- 5
+
+# C++ program to print all Even and Odd numbers from 1 to N?
+
+```c++
+#include <iostream>
+using namespace std;
+void even_and_odd(void){
+ int x ;
+    cout<<" enter number : ";
+    cin >>x;
+    cout<<"even : ";
+    for(int i=1 ; i<=x*2 ; i++){
+	if (i%2==0)
+        cout<<i<<" ";
+    }
+    cout<<endl<<"odd : ";
+    for(int i=1 ; i<=x*2 ; i++){
+	if (i%2!=0)
+        cout<<i <<" ";
+    }
+}
+int main() {
+even_and_odd();
+    return 0;
+}
+```
+
+- 6 
+
+  Write a program to swap between two numbers by the function?
+
+ 
+
+```c++
+#include <iostream>
+using namespace std;
+void swap(void){
+ int n1 , n2 ;
+    cout<< "enter two number : ";
+    cin>>n1>>n2;
+     cout << "befor swap \n n1 = "<<n1<<"\n n2 = "<<n2<<endl;
+    n1=n1+n2;
+    n2=n1-n2;
+    n1=n1-n2;
+    cout << "after swap \n n1 = "<<n1<<"\n n2 = "<<n2<<endl;
+}
+int main() {
+	swap();
+    return 0;
+}
+```
+
+- 7
+
+c++ function that finds average, sum, min and max of n numbers?
+
+```c++
+#include <iostream>
+using namespace std;
+void respons(int n){
+	int max , min , respons , sum;
+    for(int i=1 ; i<=n ; i++ ){				            cout <<endl<<"enter number "<<i<<" posation :";
+        cin>>respons;
+   		if(i==1){
+            max=respons;
+            min=respons;
+        }     
+        if(max < respons){
+		max=respons;
+        }
+        if(min > respons){
+		min=respons;
+        }
+        sum+=respons;
+    }
+ cout<<"\n the max number of "<<n<<" number = "<<max;
+ cout<<"\n the min number of "<<n<<" number = "<<min;
+ cout<<"\n the sum number of "<<n<<" number = "<<sum;
+ cout<<"\n the avareg number of "<<n<<" number = "<<sum/n;
+}
+int main() {
+    int x;
+    cout<<"enter number : ";
+    cin>>x;
+	respons(x);
     return 0;
 }
 ```
